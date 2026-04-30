@@ -8,13 +8,21 @@ const getUsers = async () => {
 
 // declaracion de funcion es ensenarle a la pc lo que tiene que hacer
 const createUser = async (username, email, password) => {
-    // VALIDAR
+    // VALIDACIONES ADICIONALES.
     if (!username || !email || !password) {
         return "Data invalida, necesitas enviar username, email y password para ingresar"
     }
 
     if(!email.endsWith("@gmail.com")){
         return "el correo electronico deberia terminar con gmail.com"
+    }
+
+    if (username.length < 3) {
+        return "El username debe tener al menos 3 caracteres"
+    }
+
+    if (password.length < 8) {
+        return "La contraseña debe tener al menos 8 caracteres"
     }
 
 
