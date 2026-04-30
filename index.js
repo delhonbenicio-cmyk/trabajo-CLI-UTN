@@ -1,6 +1,6 @@
 // indexl.js -> punto de entrada a la aplicacion, aqui es donde se ejecuta el codigo
 // en index.js no se obtienen los datos, no se hacen validaciones, no se hace nada, solo se llama a las funciones que estan en controllers.js y se muestra el resultado
-import { getUsers, createUser, updateUser, deleteUser } from "./mysql.js"
+import { getUsers, createUser, updateUser, deleteUser } from "./controllers.js"
 
 
 // npm run dev add juancito juancito@gmail.com aguanteelddl
